@@ -11,6 +11,9 @@ description: A minimal responsive jekyll template by GuysWhoCode.
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://shajanjacob.com/sanz/img/gwc-logo.png
 
+# About the author or the blog
+about : We are a nonprofit organization working to bridge the gap between students and computer technologies. We also aims at developing on ideas that are useful and beneficial to everyone. 
+
 #
 # Flags below are optional
 #
