@@ -1,0 +1,86 @@
+/*
+	G > Ash > #4d4f53
+	[] > Green > #3bb874
+	red > #FF6F59
+	*/
+/* @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700); */
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300,500);
+body{
+	background-color:#f9f9f9;
+}
+p{
+	font-size:18px;
+}
+section,
+header,
+footer{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+	background-color:#f9f9f9;
+	color:#4d4f53;
+	padding:60px 25%;
+}
+header h1{
+	color:#4d4f53;
+}
+header img{
+	margin: 0px auto;
+}
+section#sidebar{
+	margin-top:15px;
+}
+section#sidebar .well p.desc{
+	font-size:14px;
+}
+section#sidebar .well p.list{
+	font-size:16px;
+}
+section#sidebar p strong{
+	border-bottom: 2px solid #3bb874;
+	font-weight:normal;
+	padding-bottom: 1px;
+	font-size:16px;
+}
+section#sidebar li{
+	list-style-type:none;
+}
+
+section#sidebar ul{
+	padding:0px;
+}
+
+/* Featured articles */
+section#featured-articles{
+margin-top:15px;
+}
+
+.well{
+	background-color:white;
+	box-shadow:none;
+	border-color:white;
+}
+
+.well .tag-cloud{
+	/* float:left; */
+}
+
+section#articles article{
+	margin-top:15px;
+	padding: 15px;
+}
+
+section#featured-articles article{
+	padding:15px;
+}
+
+article{
+	background-color:white;
+}
+footer{
+	margin-top:10px;
+}
+footer .copyright{
+	padding: 5px 0px;
+}
