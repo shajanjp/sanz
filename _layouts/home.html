@@ -56,11 +56,9 @@
 				<div class="well recent-posts">
 					<p><strong>Recent Posts</strong></p>
 					<ul>
-						<li>Recent post 1</li>
-						<li>Recent post 2</li>
-						<li>Recent post 3</li>
-						<li>Recent post 4</li>
-						<li>Recent post 5</li>
+					{% for post in site.posts limit:5 %}
+						<li>{{ post.title }}</li>
+						{% endfor %}
 					</ul>
 				</div>
 				<div class="well catogories">
