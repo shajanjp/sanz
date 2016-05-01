@@ -23,24 +23,14 @@
 	<!-- Featured articles -->
 	<section id="featured-articles" class="container">
 		<div class="row">
+			{% for post in site.categories.test %}
 			<article class="col-sm-4">
-				<img src="img/coffee-code.jpg" alt="Dummy Image" class="img img-responsive">
+				<img src="{{ site.baseurl }}/img/coffee-code.jpg" alt="Dummy Image" class="img img-responsive">
 				<p>
-					Lorem ipsum dolor sit amet, consectetur.
+					{{ post.title }}
 				</p>			
 			</article>
-			<article class="col-sm-4">
-				<img src="img/coffee-code.jpg" alt="Dummy Image" class="img img-responsive">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur.
-				</p>			
-			</article>
-			<article class="col-sm-4">
-				<img src="img/coffee-code.jpg" alt="Dummy Image" class="img img-responsive">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur.
-				</p>			
-			</article>
+			{% endfor %}
 		</div>
 	</section>
 
