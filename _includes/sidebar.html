@@ -14,19 +14,17 @@
 	<div class="well catogories">
 		<p><strong>Categories</strong></p>
 		<ul>
-			{% for catogory in data.config.catogories %}
-			<li>{{ catogory }}</li>
+			{% for catogory in site.category-list %}
+			<li><a href="{{ site.baseurl }}/{{ catogory }}">{{ catogory }}</a></li>
 			{% endfor %}
 		</ul>
 	</div>
 	<div class="well tag-cloud">
 		<p><strong>Tag Cloud</strong></p>
 		<ul>
-			<li>Tag Test 1</li>
-			<li>Tag Test 2</li>
-			<li>Tag Test 3</li>
-			<li>Tag Test 4</li>
-			<li>Tag Test 5</li>
+		{% for tag in site.tag-list %}
+			<li class="badge">{{ tag }}</li>
+			{% endfor %}
 		</ul>
 	</div>
 	<div class="well sponsored">
