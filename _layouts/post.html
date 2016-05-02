@@ -17,7 +17,6 @@
 			<img src="{{ site.avatar }}" alt="GuysWhoCode" class="img img-responsive" width="100px" height="100px">
 			<h1>{{ site.name }}</h1>
 			<p>{{ site.description }}</p>
-			<a href="">{{ site.baseurl }}</a>
 		</div>
 	</header>
 
@@ -27,9 +26,9 @@
 			<!-- Main Articles -->
 			<div id="articles" class="col-sm-9">
 				<article class="row">
-					<img src="{{ site.baseurl }}/img/{{ post.thumbnail }}" alt="" class="img img-responsive">
-					<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-					<p>{{ post.content }}</p>
+					<img src="{{ site.baseurl }}/img/{{ page.thumbnail }}" alt="" class="img img-responsive">
+					<h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
+					<p>{{ page.content }}</p>
 				</article>
 			</div>
 			<section id="sidebar" class="col-sm-3">
