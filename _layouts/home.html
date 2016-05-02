@@ -8,84 +8,29 @@
 	<meta name="description" content="A minimal jekyl template.">
 	<meta name="keywords" content="sanz,jekyl,template,gwc,guyswhocode">
 	<meta name="author" content="GuysWhoCode">
-	<link rel="stylesheet" href="http://www.guyswhocode.com/css/bootstrap.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 </head>
 <body>
-	<header>
-		<div class="text-center">
-			<img src="{{ site.avatar }}" alt="GuysWhoCode" class="img img-responsive" width="100px" height="100px">
-			<h1>{{ site.name }}</h1>
-			<p>{{ site.description }}</p>
-		</div>
-	</header>
+
+	{% include header.html %}
 
 	<!-- Featured articles -->
-	<section id="featured-articles" class="container">
-		<div class="row">
-			{% for post in site.categories.test %}
-			<article class="col-sm-4">
-				<img src="{{ site.baseurl }}/img/coffee-code.jpg" alt="Dummy Image" class="img img-responsive">
-				<p>
-					{{ post.title }}
-				</p>			
-			</article>
-			{% endfor %}
-		</div>
-	</section>
 
+	{% include featured-articles.html %}
 
 	<!-- articles -->
 	<div class="container">
 		<div class="row">
 			<!-- Main Articles -->
 			<div id="articles" class="col-sm-9">
-				{% for post in site.posts limit:3 %}
-				<article class="row">
-					<img src="{{ site.baseurl }}/img/{{ post.thumbnail }}" alt="" class="img img-responsive">
-					<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-					<p>{{ post.content }}</p>
-				</article>
-				{% endfor %}
+				{% include articles.html %}
 			</div>
-			<section id="sidebar" class="col-sm-3">
-				<div class="well about-us">
-					<p><strong>About Us</strong></p>
-					<p class="desc"> {{ site.about }}</p>
-				</div>
-				<div class="well recent-posts">
-					<p><strong>Recent Posts</strong></p>
-					<ul>
-						{% for post in site.posts limit:5 %}
-						<li>{{ post.title }}</li>
-						{% endfor %}
-					</ul>
-				</div>
-				<div class="well catogories">
-					<p><strong>Categories</strong></p>
-					<ul>
-						{% for catogory in data.config.catogories %}
-						<li>{{ catogory }}</li>
-						{% endfor %}
-					</ul>
-				</div>
-				<div class="well tag-cloud">
-					<p><strong>Tag Cloud</strong></p>
-					<ul>
-						<li>Tag Test 1</li>
-						<li>Tag Test 2</li>
-						<li>Tag Test 3</li>
-						<li>Tag Test 4</li>
-						<li>Tag Test 5</li>
-					</ul>
-				</div>
-
-			</section>
+			<div class="col-sm-3">
+			{% include sidebar.html %}
+			</div>
 		</div>
 	</div>	
-
-	<footer>
-		<p class="text-center copyright">Made with love in <a href="http://www.guyswhocode.com/labs">GWC labs</a>.</p>
-	</footer>
+	{% include footer.html %}
 </body>
 </html>

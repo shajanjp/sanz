@@ -8,13 +8,13 @@
 	<meta name="description" content="A minimal jekyl template.">
 	<meta name="keywords" content="sanz,jekyl,template,gwc,guyswhocode">
 	<meta name="author" content="GuysWhoCode">
-	<link rel="stylesheet" href="http://www.guyswhocode.com/css/bootstrap.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 </head>
 <body>
 	<header>
 		<div class="text-center">
-			<img src="{{ site.avatar }}" alt="GuysWhoCode" class="img img-responsive" width="100px" height="100px">
+			<img src="{{ site.baseurl }}{{ site.avatar }}" alt="GuysWhoCode" class="img img-responsive" width="100px" height="100px">
 			<h1>{{ site.name }}</h1>
 			<p>{{ site.description }}</p>
 		</div>
