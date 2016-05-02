@@ -12,12 +12,11 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 </head>
 <body>
-
+	<!-- Header -->
 	{% include header.html %}
 
-	<!-- Featured articles -->
-
-	{% include featured-articles.html %}
+	<!-- Navigation -->
+	{% include nav.html %}
 
 	<!-- articles -->
 	<div class="container">
@@ -27,10 +26,16 @@
 				{% include articles.html %}
 			</div>
 			<div class="col-sm-3">
-			{% include sidebar.html %}
+				<!-- Sidebar -->
+				{% include sidebar.html %}
 			</div>
 		</div>
 	</div>	
+
+	<!-- Featured articles -->
+	{% include featured-articles.html %}
+	
+	<!-- Footer -->
 	{% include footer.html %}
 </body>
 </html>
