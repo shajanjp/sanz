@@ -117,6 +117,10 @@ section#featured-articles article{
 article{
 	background-color:white;
 }
+
+article h2 a{
+	color:#4d4f53;
+}
 footer{
 	margin-top:10px;
 }
