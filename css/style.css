@@ -13,7 +13,8 @@ p{
 }
 section,
 header,
-footer{
+footer,
+article{
 	font-family: 'Ubuntu', sans-serif;
 }
 
