@@ -26,6 +26,12 @@ header{
 header h1{
 	color:#4d4f53;
 	margin-top:5px;
+
+}
+header h1 a,
+header h1 a:hover{
+	color:#4d4f53;	
+	text-decoration:none;
 }
 header img{
 	margin: 0px auto;
@@ -55,7 +61,7 @@ section#sidebar ul{
 
 /* Featured articles */
 section#featured-articles{
-margin-top:15px;
+	margin-top:15px;
 }
 
 .well{
