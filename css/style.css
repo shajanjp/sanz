@@ -18,6 +18,15 @@ article{
 	font-family: 'Ubuntu', sans-serif;
 }
 
+article .badge,
+section#sidebar .badge{
+	background-color:transparent;
+	color:#4d4f53;
+	border:1px solid #3bb874;
+	border-radius:0px;
+	font-weight:normal;
+}
+
 header{
 	background-color:#f9f9f9;
 	color:#4d4f53;
@@ -90,6 +99,11 @@ section#sidebar ul{
 	padding:0px;
 }
 
+section#sidebar ul li a{
+	text-transform: capitalize;
+	color: #4d4f53;
+	text-decoration: none;
+}
 /* Featured articles */
 section#featured-articles{
 	margin-top:15px;
