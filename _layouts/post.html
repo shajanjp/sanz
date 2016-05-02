@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sanz</title>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#8dc34b">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="A minimal jekyl template.">
+	<meta name="keywords" content="sanz,jekyl,template,gwc,guyswhocode">
+	<meta name="author" content="GuysWhoCode">
+	<link rel="stylesheet" href="http://www.guyswhocode.com/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="text-center">
+			<img src="{{ site.avatar }}" alt="GuysWhoCode" class="img img-responsive" width="100px" height="100px">
+			<h1>{{ site.name }}</h1>
+			<p>{{ site.description }}</p>
+		</div>
+	</header>
+
+	<!-- articles -->
+	<div class="container">
+		<div class="row">
+			<!-- Main Articles -->
+			<div id="articles" class="col-sm-9">
+				<article class="row">
+					<img src="{{ site.baseurl }}/img/{{ post.thumbnail }}" alt="" class="img img-responsive">
+					<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+					<p>{{ post.content }}</p>
+				</article>
+			</div>
+			<section id="sidebar" class="col-sm-3">
+				<div class="well about-us">
+					<p><strong>About Us</strong></p>
+					<p class="desc"> {{ site.about }}</p>
+				</div>
+				<div class="well recent-posts">
+					<p><strong>Recent Posts</strong></p>
+					<ul>
+						{% for post in site.posts limit:5 %}
+						<li>{{ post.title }}</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="well catogories">
+					<p><strong>Categories</strong></p>
+					<ul>
+						<li>Test category 1</li>
+						<li>Test category 2</li>
+						<li>Test category 3</li>
+						<li>Test category 4</li>
+						<li>Test category 5</li>
+					</ul>
+				</div>
+				<div class="well tag-cloud">
+					<p><strong>Tag Cloud</strong></p>
+					<ul>
+						<li>Tag Test 1</li>
+						<li>Tag Test 2</li>
+						<li>Tag Test 3</li>
+						<li>Tag Test 4</li>
+						<li>Tag Test 5</li>
+					</ul>
+				</div>
+
+			</section>
+		</div>
+	</div>	
+
+
+	<footer>
+		<p class="text-center copyright">Made with love in <a href="http://www.guyswhocode.com/labs">GWC labs</a>.</p>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
