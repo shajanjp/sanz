@@ -1,0 +1,32 @@
+<section id="sidebar">
+	<div class="well about-us">
+		<p><strong>About Us</strong></p>
+		<p class="desc"> {{ site.about }}</p>
+	</div>
+	<div class="well recent-posts">
+		<p><strong>Recent Posts</strong></p>
+		<ul>
+			{% for post in site.posts limit:5 %}
+			<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="well catogories">
+		<p><strong>Categories</strong></p>
+		<ul>
+			{% for catogory in data.config.catogories %}
+			<li>{{ catogory }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="well tag-cloud">
+		<p><strong>Tag Cloud</strong></p>
+		<ul>
+			<li>Tag Test 1</li>
+			<li>Tag Test 2</li>
+			<li>Tag Test 3</li>
+			<li>Tag Test 4</li>
+			<li>Tag Test 5</li>
+		</ul>
+	</div>
+</section>
