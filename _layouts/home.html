@@ -36,10 +36,10 @@
 
 
 	<!-- articles -->
-	<section id="articles" class="container">
+	<div class="container">
 		<div class="row">
 			<!-- Main Articles -->
-			<div class="col-sm-9">
+			<div id="articles" class="col-sm-9">
 				{% for post in site.posts limit:3 %}
 				<article class="row">
 					<img src="{{ site.baseurl }}/img/{{ post.thumbnail }}" alt="" class="img img-responsive">
@@ -84,9 +84,8 @@
 
 			</section>
 		</div>
-	</section>	
-
-
+	</div>	
+	
 	<footer>
 		<p class="text-center copyright">Made with love in <a href="http://www.guyswhocode.com/labs">GWC labs</a>.</p>
 	</footer>
