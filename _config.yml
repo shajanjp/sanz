@@ -9,7 +9,7 @@ name: Sanz
 description: A minimal responsive jekyll template by GuysWhoCode.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: http://shajanjacob.com/sanz/img/gwc-logo.png
+avatar: /img/sanz-logo.png
 
 # About the author or the blog
 about : We are a nonprofit organization working to bridge the gap between students and computer technologies. We also aims at developing on ideas that are useful and beneficial to everyone. 
@@ -59,7 +59,7 @@ baseurl: "http://shajanjp.github.io/sanz"
 permalink: /:year/:month/:title/
 
 # The release of Jekyll Now that you're using
-version: v3.0.5
+version: v1.2.0
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -75,10 +75,10 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+# # Use the following plug-ins
+# gems:
+#   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+#   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 # Exclude these files from your production _site
 exclude:
