@@ -3,7 +3,7 @@ layout: post
 title: Another blog post
 thumbnail: 
 category: test
-tags: [code, gwc, eggs, juice]
+tags: ["code", "hello", "people", "gem"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ex reprehenderit aliquid, dolorum enim id. Possimus exercitationem repellat numquam, mollitia ipsam in nobis facere dolor dolores blanditiis laborum doloremque eveniet itaque dicta facilis harum dolorem totam inventore. Non ipsum qui, numquam eaque eum porro sunt autem commodi. Quam, dolorem, architecto!

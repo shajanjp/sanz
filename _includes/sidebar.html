@@ -1,9 +1,9 @@
 <section id="sidebar">
-	<div class="well about-us">
+	<div class="well box about-us">
 		<p><strong>About Us</strong></p>
 		<p class="desc"> {{ site.about }}</p>
 	</div>
-	<div class="well recent-posts">
+	<div class="well box recent-posts">
 		<p><strong>Recent Posts</strong></p>
 		<ul>
 			{% for post in site.posts limit:5 %}
@@ -11,7 +11,7 @@
 			{% endfor %}
 		</ul>
 	</div>
-	<div class="well catogories">
+	<div class="well box catogories">
 		<p><strong>Categories</strong></p>
 		<ul>
 			{% for catogory in site.category-list %}
@@ -19,15 +19,15 @@
 			{% endfor %}
 		</ul>
 	</div>
-	<div class="well tag-cloud">
+	<div class="well box tag-cloud">
 		<p><strong>Tag Cloud</strong></p>
 		<ul>
-		{% for tag in site.tag-list %}
+		{% for tag in post.tags %}
 			<li class="badge">{{ tag }}</li>
 			{% endfor %}
 		</ul>
 	</div>
-	<div class="well sponsored">
+	<div class="well box sponsored">
 		<p><strong>Sponsored</strong></p>
 		<ul>
 			<li>Tag Test 1</li>
