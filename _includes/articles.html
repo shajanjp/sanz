@@ -1,6 +1,6 @@
 {% for post in site.posts limit:3 %}
 <article class="row box">
-	<img src="{{ site.baseurl }}/img/{{ post.thumbnail }}" alt="" class="img img-responsive">
+	<img src="{{ site.baseurl }}/public/img/posts/{{ post.thumbnail }}" alt="" class="img img-responsive">
 	<h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 	<p>{{ post.content }}</p>
 	<ul class="tags">

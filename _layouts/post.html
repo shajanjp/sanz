@@ -3,24 +3,20 @@
 <head>
 	<title>Sanz</title>
 	<meta charset="UTF-8">
-	<meta name="theme-color" content="#8dc34b">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="A minimal jekyl template.">
-	<meta name="keywords" content="sanz,jekyl,template,gwc,guyswhocode">
-	<meta name="author" content="GuysWhoCode">
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+	{% include post-meta.html %}
+	<link rel="stylesheet" href="{{ site.baseurl }}/public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/public/css/style.css">
 </head>
 <body>
-	{% include header.html%}
+	{% include header-common.html %}
 
 	<!-- articles -->
 	<div class="container">
 		<div class="row">
 			<!-- Main Articles -->
 			<div id="articles" class="col-sm-9">
-				<article class="row">
-					<img src="{{ site.baseurl }}/img/{{ page.thumbnail }}" alt="" class="img img-responsive">
+				<article class="row box">
+					<img src="{{ site.baseurl }}/public/img/posts/{{ page.thumbnail }}" alt="" class="img img-responsive">
 					<h2><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h2>
 					<p>{{ page.content }}</p>
 				</article>

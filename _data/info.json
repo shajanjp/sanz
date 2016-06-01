@@ -1,0 +1,54 @@
+{
+   "catogories":[
+      "How-To",
+      "Intro",
+      "Design",
+      "Development"
+   ],
+   "tags":[
+      "google",
+      "code",
+      "gwc",
+      "tool",
+      "service",
+      "design"
+   ],
+   "authors":[
+      {
+         "name":"Shajan Jacob",
+         "email":"",
+         "facebook":"",
+         "avatar":"shajanjp.jpg"
+      },
+      {
+         "name":"Vishal Shaji Philip",
+         "email":"",
+         "facebook":"",
+         "avatar":"vishal"
+      },
+      {
+         "name":"Qubin Jose",
+         "email":"",
+         "facebook":"",
+         "avatar":""
+      },
+      {
+         "name":"Joel George",
+         "email":"",
+         "facebook":"",
+         "avatar":""
+      },
+      {
+         "name":"Nowfal Nasir",
+         "email":"",
+         "facebook":"",
+         "avatar":""
+      },
+      {
+         "name":"Jay Shankar",
+         "email":"",
+         "facebook":"",
+         "avatar":""
+      }
+   ]
+}
